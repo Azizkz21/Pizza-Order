@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-pagination-color: #ff0000;
+  --swiper-pagination-bullet-inactive-color: #ffffff;
+  --swiper-pagination-bullet-size: 21px;
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  color: #000000;
+  background-color: #ffdf8c;
+  padding: 43px 10px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1340px;
+  width: 100%;
+  border-radius: 10px;
+}
