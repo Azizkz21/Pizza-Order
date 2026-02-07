@@ -1,5 +1,5 @@
 import { createContext, useReducer, type Dispatch } from "react";
-import type { CartAction, CartItem } from "../types/Types";
+import type { CartAction, CartItem } from "../types/types";
 
 type CartContextType = {
   cartItems: CartItem[];

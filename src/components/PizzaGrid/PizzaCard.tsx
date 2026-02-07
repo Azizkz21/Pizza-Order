@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import type { FormPizza, SizePizza, Variant } from "../../types/Types";
+import type { FormPizza, SizePizza, Variant } from "../../types/types";
 import { MyContext } from "../../context/CartContext";
 
 

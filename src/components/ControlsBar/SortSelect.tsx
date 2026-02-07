@@ -1,4 +1,4 @@
-import type { ProductSort } from "../../types/Types";
+import type { ProductSort } from "../../types/types";
 import { icons } from "../icons";
 
 interface Props {

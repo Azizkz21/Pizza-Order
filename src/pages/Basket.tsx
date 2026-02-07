@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { icons } from "../components/icons";
 
 import { Link } from "react-router-dom";

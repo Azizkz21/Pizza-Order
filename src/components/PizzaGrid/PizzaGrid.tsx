@@ -1,6 +1,6 @@
 import PizzaCard from "./PizzaCard";
 
-import type { Product } from "../../types/Types";
+import type { Product } from "../../types/types";
 
 interface Props {
   sorted: Product[];

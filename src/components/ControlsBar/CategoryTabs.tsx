@@ -1,4 +1,4 @@
-import type { MenuCategory } from "../../types/Types";
+import type { MenuCategory } from "../../types/types";
 
 interface Props {
   category: MenuCategory;

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CategoryTabs from "../components/ControlsBar/CategoryTabs";
 import SortSelect from "../components/ControlsBar/SortSelect";
 import PizzaGrid from "../components/PizzaGrid/PizzaGrid";
-import type { MenuCategory, Product, ProductSort } from "../types/Types";
+import type { MenuCategory, Product, ProductSort } from "../types/types";
 import { productData } from "../data/productData";
 
 export default function Home() {
