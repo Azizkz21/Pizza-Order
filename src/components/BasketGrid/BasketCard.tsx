@@ -44,7 +44,7 @@ export default function BasketCard({
             className="rounded-full size-8"
           >
             <img
-              src={icons.minus}
+              src={icons.minus.src}
               width={32}
               height={32}
               loading="lazy"
@@ -57,7 +57,7 @@ export default function BasketCard({
             className="rounded-full size-8"
           >
             <img
-              src={icons.plus}
+              src={icons.plus.src}
               width={32}
               height={32}
               loading="lazy"
@@ -71,7 +71,7 @@ export default function BasketCard({
           className="rounded-full size-8"
         >
           <img
-            src={icons.deleted}
+            src={icons.deleted.src}
             width={32}
             height={32}
             loading="lazy"

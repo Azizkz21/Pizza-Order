@@ -1,7 +1,10 @@
+'use client'
+
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+
 import { icons } from "../components/icons";
 import { MyContext } from "../context/CartContext";
+import Link from "next/link";
 
 
 export default function Header() {
@@ -12,9 +15,9 @@ export default function Header() {
   return (
     <header className="px-3 pt-6 md:pt-14">
       <div className="flex flex-col w-full gap-4 pb-8 mx-auto border-b-2 max-w-mainContainer border-color-br md:flex-row md:items-center md:justify-between md:pb-10">
-        <Link to={"/"}>
+        <Link href={"/"}>
           <img
-            src={icons.logo}
+            src={icons.logo.src}
             width={314}
             height={41}
             loading="lazy"
@@ -22,7 +25,7 @@ export default function Header() {
           />
         </Link>
         <Link
-          to={"/basket"}
+          href={"/basket"}
           className="flex items-center justify-center w-full gap-3 px-4 py-3 bg-link rounded-rounded4xl md:w-auto md:px-6 md:py-4"
         >
           <span className="text-base font-bold text-white sans ">
@@ -31,7 +34,7 @@ export default function Header() {
           <span className="block w-w1 h-h25 bg-linebasket"></span>
           <span className="flex items-center gap-2 text-base font-bold text-white sans">
             <img
-              src={icons.basketH}
+              src={icons.basketH.src}
               width={16}
               height={16}
               loading="lazy"

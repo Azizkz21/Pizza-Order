@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from "react";
 import CategoryTabs from "../components/ControlsBar/CategoryTabs";
 import SortSelect from "../components/ControlsBar/SortSelect";

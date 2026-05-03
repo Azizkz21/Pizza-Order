@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -13,24 +18,24 @@ module.exports = {
         link: "#FE5F1E",
         cardBg: "#F3F3F3",
         gray2: "#B6B6B6",
-        gray3:"#777777",
+        gray3: "#777777",
         br: "#F6F6F6",
-        back:"#D3D3D3",
-        textGray:"#8D8D8D",
-        linebasket: "rgba(255, 255, 255, 0.25)"
+        back: "#D3D3D3",
+        textGray: "#8D8D8D",
+        linebasket: "rgba(255, 255, 255, 0.25)",
       },
       maxWidth: {
         mainContainer: "1225px",
       },
       borderRadius: {
-        rounded4xl : "30px"
-      }, 
+        rounded4xl: "30px",
+      },
       width: {
-        w1 : "1px"
+        w1: "1px",
       },
       height: {
-        h25 : "25px"
-      }
+        h25: "25px",
+      },
     },
   },
   plugins: [],

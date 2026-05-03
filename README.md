@@ -1,6 +1,6 @@
 # Pizza Order (React Pizza)
 
-A small but complete pizza shop UI built with React + TypeScript.
+A small but complete pizza shop UI built with React + TypeScript + Next.
 Pick dough and size, sort the menu, add items to the cart, and see totals instantly.
 
 ## Features
@@ -12,8 +12,7 @@ Pick dough and size, sort the menu, add items to the cart, and see totals instan
 ## Tech Stack
 - React
 - TypeScript
-- Vite
-- React Router
+- Next
 - Tailwind CSS
 
 ## Getting Started

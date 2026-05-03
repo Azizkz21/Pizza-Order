@@ -1,9 +1,12 @@
+'use client'
+
 import { useContext } from "react";
 import { icons } from "../components/icons";
 
-import { Link } from "react-router-dom";
+
 import BasketGrid from "../components/BasketGrid/BasketGrid";
 import { MyContext } from "../context/CartContext";
+import Link from "next/link";
 
 export default function Basket() {
   const ctx = useContext(MyContext);
@@ -16,7 +19,7 @@ export default function Basket() {
           <div className="flex flex-col w-full gap-4 pb-8 mx-auto max-w-mainContainer md:flex-row md:items-center md:justify-between md:pb-10">
             <div className="flex items-center gap-3">
               <img
-                src={icons.basketMain}
+                src={icons.basketMain.src}
                 width={29}
                 height={29}
                 loading="lazy"
@@ -29,7 +32,7 @@ export default function Basket() {
               className="flex items-center gap-2 text-base transition text-gray2 hover:text-link"
             >
               <img
-                src={icons.basketDeleted}
+                src={icons.basketDeleted.src}
                 width={20}
                 height={20}
                 loading="lazy"
@@ -53,11 +56,11 @@ export default function Basket() {
             </div>
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <Link
-                to={"/"}
+                href={"/"}
                 className="flex items-center justify-center w-full gap-2 px-3 py-3 border-2 border-back rounded-rounded4xl text-back hover:text-link hover:border-link sm:w-auto sm:justify-start"
               >
                 <img
-                  src={icons.backArrow}
+                  src={icons.backArrow.src}
                   width={6}
                   height={12}
                   loading="lazy"
@@ -86,7 +89,7 @@ export default function Basket() {
           </div>
           <img
             className=""
-            src={icons.empty}
+            src={icons.empty.src}
             width={300}
             height={255}
             loading="lazy"
@@ -94,7 +97,7 @@ export default function Basket() {
           />
 
           <Link
-            to={"/"}
+            href={"/"}
             className="flex items-center gap-2 px-5 py-3 text-base font-bold text-white transition border-2 border-transparent bg-link rounded-rounded4xl hover:text-link hover:border-link hover:bg-transparent"
           >
             Вернуться назад

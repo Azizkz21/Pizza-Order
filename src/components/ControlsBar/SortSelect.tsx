@@ -14,7 +14,7 @@ export default function SortSelect({ filter, handleSort }: Props) {
         htmlFor="productSort"
       >
         <img
-          src={icons.sortArrow}
+          src={icons.sortArrow.src}
           width={10}
           height={6}
           loading="lazy"
