@@ -13,12 +13,16 @@ type Props = {
 
 export default function PizzaCard({ title, imageUrl, variants, id }: Props) {
   const ctx = useContext(MyContext);
-  if (!ctx) return;
-  const { cartItems, dispatch } = ctx;
+  
+ 
   const [selectedDough, setSelectedDough] = useState<FormPizza>(
     variants[0].dough,
   );
   const [selectedSize, setSelectedSize] = useState<SizePizza>(variants[0].size);
+
+  if (!ctx) return;
+
+   const { cartItems, dispatch } = ctx;
 
   const currentVariant =
     variants.find(
