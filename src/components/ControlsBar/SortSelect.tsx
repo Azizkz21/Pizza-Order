@@ -1,3 +1,4 @@
+'use client'
 import type { ProductSort } from "../../types/types";
 import { icons } from "../icons";
 

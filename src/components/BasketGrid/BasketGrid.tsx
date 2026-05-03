@@ -1,3 +1,4 @@
+'use client'
 import { useContext } from "react";
 import BasketCard from "./BasketCard";
 import { MyContext } from "../../context/CartContext";

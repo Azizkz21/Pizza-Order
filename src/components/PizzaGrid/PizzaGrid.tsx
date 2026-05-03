@@ -1,3 +1,4 @@
+'use client'
 import PizzaCard from "./PizzaCard";
 
 import type { Product } from "../../types/types";

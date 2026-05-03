@@ -1,3 +1,4 @@
+'use client'
 import type { MenuCategory } from "../../types/types";
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 
 export default function CategoryTabs({ category, setCategory }: Props) {
   return (
-    <ul className="flex items-center gap-2 overflow-x-auto pb-2 sm:flex-wrap sm:pb-0">
+    <ul className="flex items-center gap-2 pb-2 overflow-x-auto sm:flex-wrap sm:pb-0">
       <li>
         <button
           className={`px-4 py-2 text-sm font-bold whitespace-nowrap rounded-rounded4xl transition hover:bg-black hover:text-white sm:px-8 sm:py-3 sm:text-base ${category == "all" ? "bg-black text-white" : "bg-tabBg text-black"}`}

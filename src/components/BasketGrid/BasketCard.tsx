@@ -1,3 +1,4 @@
+'use client'
 import { useContext } from "react";
 import type { FormPizza, SizePizza } from "../../types/types";
 import { icons } from "../icons";
